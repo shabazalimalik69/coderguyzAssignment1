@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Page!</title>
+    <style>
+      * {
+        user-select: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      #container {
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .products {
+        flex-direction: column;
+        display: flex;
+        /* border: 2px solid red; */
+      }
+      .products > img {
+        width: 300px;
+        border-radius: 7px;
+      }
+      .info {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .title {
+        margin: 0;
+      }
+      .desc {
+        font-weight: 400;
+        margin: 2px;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        margin-top: 3px;
+        justify-content: center;
+      }
+      .price * {
+        margin: 0;
+        padding-right: 5px;
+      }
+      .price > h2 {
+        font-size: 22px;
+        font-weight: 300;
+        text-decoration: line-through;
+      }
+      .discount {
+        color: rgb(13, 219, 13);
+        font-weight: 500;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="products">
+        <img
+          src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/7/1/c7047f79-1d31-47d2-839a-6716252acaba1593554450784-6.jpg"
+          alt=""
+        />
+        <div class="info">
+          <h1 class="title">Pause</h1>
+          <h3 class="desc">Men Cotton Long Sleeves Shrug</h3>
+          <div class="price">
+            <h1>359$</h1>
+            <h2 class="strike">1,499$</h2>
+            <div class="discount">-76%</div>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <img
+          src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2477047/2018/4/20/11524217117654-WROGN-Men-Black-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans-21524217117458-1.jpg"
+          alt="Product image"
+        />
+        <div class="info">
+          <h1 class="title">JUBINATION</h1>
+          <h3 class="desc">Men Wool Sleeveless Sweater Pack Of 1</h3>
+          <div class="price">
+            <h1>799$</h1>
+            <h2 class="strike">1,499$</h2>
+            <div class="discount">-47%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
