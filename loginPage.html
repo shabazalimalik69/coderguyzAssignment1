@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+    #navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    background-color: rgb(61, 61, 158);
+    padding: 10px;
+  }
+  #form
+  {
+      text-align: center;
+      line-height: 60px;
+      
+  }
+  #submit
+  {
+      color: white;
+      height: 40px;
+      width: 100px;
+      background-color: blueviolet;
+      margin: auto;
+      text-align: center;
+      
+      
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+  h1{
+      text-align: center;
+  }
+  #form>p a{
+      color:rgba(96, 96, 250, 0.767);
+  }
+  #box
+  {
+      /* display: block; */
+      margin-top: 100px;
+      height: 400px;
+      width: 300px;
+      margin: auto;
+      justify-content: center;
+      background-color: antiquewhite;
+  }
+  
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div><a href="mens.html">Mens</a></div>
+      <div><a href="womens.html">Womens</a></div>
+      <div><a href="login.html">Login</a></div>
+      <div><a href="signup.html">Signup</a></div>
+    </div>
+    
+    <div id="box">    <form id="form">
+        <h1>Login</h1>
+        <input id="username" type="email" placeholder="Enter Your Email">
+    <br>
+        <input id="password" type="password" placeholder="Enter Your password">
+        <br>
+        <button id="submit">Login </button>
+        <p>Don't have an account ? <a href="signup.html">Signup</a></p>
+        
+    </form>
+</div>
+
+  </body>
+</html>
+
+<script>
+//     var x=document.getElementById("form").values
+
+const form1 = document.querySelector('form').addEventListener("submit",onClick);
+  function onClick()
+  {
+      event.preventDefault();
+    //   var name=JSON.parse(localStorage.setItem("username"));
+    //   var pass=JSON.parse(localStorage.setItem("password"));
+      var data = {
+      username: form.username.value,
+      password: form.password.value,
+      
+    };
+    
+    
+    // console.log(data)
+    
+  }
+</script>
