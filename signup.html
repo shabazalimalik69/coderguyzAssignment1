@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        #container{
+            width: 32%;
+            height: auto;
+            margin: auto;
+            background-color: #48c9b0;
+            text-align: center;
+            padding: 30px 0px 40px 0px;
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        form{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(5,70px);
+            width: 80%;
+            margin: auto;
+        }
+        input{
+            border: 0px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+        input::placeholder{
+            font-size: 15px;
+            color: grey;
+        }
+        button{
+            cursor: pointer;
+            border: 0px;
+            background-color: #17A589;
+            margin-bottom: 10px;
+            color: aliceblue;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: rgb(82, 207, 207);
+        }
+        h2{
+            color: aliceblue;
+            margin-bottom: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>- Visitor -</h2>
+        <form action="">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="text" placeholder="Organization" id="org">
+            <button id="btn1">SIGN UP</button>
+            <button id="btn">RETURN</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    var details = document.querySelector("form") ;
+    details.addEventListener("submit",formInfo) ;
+    function formInfo(){
+        event.preventDefault ;
+        var name = details.name.value ;
+        var email = details.email.value ;
+        var organization = details.org.value ;
+    }
+    var btn = document.querySelector("#btn");
+    btn.addEventListener("click",addClick) ;
+    function addClick(){
+        alert("Do you want to return") ;
+    }
+    var btn1 = document.querySelector("#btn1");
+    btn1.addEventListener("click",addBtn1) ;
+    function addBtn1(){
+        window.open("./mens.html")
+    }
+</script>
